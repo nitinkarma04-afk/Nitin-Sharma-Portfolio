@@ -1,0 +1,218 @@
+ /* ================= PROJECTS SECTION ================= */
+
+.projects-section {
+  background: #020617;
+  padding: 80px 6% 70px;   /* 🔥 vertical space kam */
+  color: #e5e7eb;
+}
+
+/* HEADING */
+.projects-heading {
+  text-align: center;
+  font-size: 2.8rem;      /* 🔥 smaller than before */
+  color: #60a5fa;
+  margin-bottom: 2.8rem; /* 🔥 gap kam */
+  font-weight: 700;
+}
+
+/* ================= PROJECT CARD ================= */
+
+.project-card {
+  max-width: 1100px;      /* 🔥 thoda narrow */
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.2rem;            /* 🔥 gap kam */
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 22px;
+  padding: 2rem;          /* 🔥 padding kam */
+}
+
+/* LEFT */
+.count {
+  font-size: 3.2rem;      /* 🔥 thoda subtle */
+  opacity: 0.12;
+  font-weight: 800;
+}
+
+.project-info h3 {
+  font-size: 1.9rem;
+  margin-top: 0.4rem;
+}
+
+.project-info p {
+  margin: 0.7rem 0;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+/* TECH STACK */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0.9rem;
+}
+
+.tech-stack span {
+  padding: 6px 14px;
+  background: rgba(96, 165, 250, 0.15);
+  border-radius: 50px;
+  font-size: 0.85rem;
+}
+
+/* ACTION */
+.actions {
+  margin-top: 1.4rem;   /* 🔥 button upar aa gaya */
+}
+
+.actions button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+.actions button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* RIGHT IMAGE */
+.project-image img {
+  width: 100%;
+  max-height: 240px;     /* 🔥 image height control */
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* ================= NAV BUTTONS ================= */
+
+.nav {
+  margin-top: 2rem;      /* 🔥 nav upar aa gaya */
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.nav button {
+  width: 46px;           /* 🔥 thoda smaller */
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(96, 165, 250, 0.15);
+  color: #60a5fa;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* ================= MODAL ================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal {
+  background: #020617;
+  padding: 2.2rem;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal ul {
+  margin-top: 1rem;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .projects-heading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    padding: 1.6rem;
+    gap: 1.6rem;
+  }
+
+  .project-image img {
+    max-height: 210px;
+  }
+}
+
+
+
+ /* ================= ACTION BUTTONS FIX ================= */
+
+.actions {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 14px;              /* proper spacing */
+}
+
+/* Case Study Button */
+.actions button {
+  height: 42px;
+  padding: 0 22px;
+  border-radius: 30px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Icon Buttons (GitHub + Live) */
+.actions a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(96, 165, 250, 0.15);
+  color: #60a5fa;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.actions a:hover {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+ 

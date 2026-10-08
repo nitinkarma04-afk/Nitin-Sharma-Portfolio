@@ -1,0 +1,143 @@
+ .hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #020617;
+  color: #fff;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+/* LEFT */
+.hero-left h1 {
+  font-size: 48px;
+}
+
+.hero-left h1 span {
+  color: #60a5fa;
+}
+
+.role-text {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #60a5fa;
+}
+
+.hero-left p {
+  margin-top: 20px;
+  max-width: 480px;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+.hero-actions {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn.primary {
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* SOCIAL */
+ .socials {
+  display: flex;
+  gap: 14px;
+}
+
+.socials a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #60a5fa;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+
+/* IMAGE */
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+ .image-ring {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+   background: linear-gradient(135deg, #2563eb, #38bdf8);
+
+ 
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;               /* 🔥 ring thickness */
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.35);
+}
+
+
+
+.image-ring {
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.35);
+}
+
+
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #020617;
+   
+ 
+}
+
+ .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+      /* 🔥 WHITE SIDES FIX */
+  display: block;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
